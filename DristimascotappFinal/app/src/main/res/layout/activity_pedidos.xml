@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d1f2eb"
+    tools:context=".MainActivity">
+
+    <!-- Barra de navegación superior -->
+
+    <!-- Contenedor central para mostrar los pedidos -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#C4CEDA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="              HISTORIAL"
+            android:textColor="#0B0B0B"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="18dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- Contenedor para botones "Servicios" y "Productos" -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_servicios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PEDIDOS"
+                android:textColor="#6FB0ED" />
+
+            <!-- Espacio entre los botones -->
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="No tienes ningún pedido"
+            android:textColor="#070707"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="388dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@mipmap/perro3_foreground" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="16dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="75dp"
+        android:layout_height="68dp"
+        app:srcCompat="@mipmap/inicio_foreground"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="632dp" />
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="82dp"
+        android:layout_height="66dp"
+        app:srcCompat="@mipmap/pedido_foreground"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="633dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="82dp"
+        android:layout_height="66dp"
+        app:srcCompat="@mipmap/ubicacion_foreground"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="635dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="82dp"
+        android:layout_height="66dp"
+        app:srcCompat="@mipmap/cuenta_foreground"
+        tools:layout_editor_absoluteX="286dp"
+        tools:layout_editor_absoluteY="635dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

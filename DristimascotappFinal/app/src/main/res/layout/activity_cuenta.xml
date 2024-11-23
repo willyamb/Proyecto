@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d1f2eb"
+    tools:context=".vista1">
+
+
+    <ImageView
+        android:id="@+id/imagenperfil"
+        android:layout_width="337dp"
+        android:layout_height="250dp"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="96dp"
+        tools:srcCompat="@mipmap/perfild_foreground" />
+
+    <TextView
+        android:id="@+id/nombreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del usuario"
+        android:textColor="#673AB7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="218dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="496dp"
+        android:backgroundTint="#E91E63"
+        android:text="Cargar Foto"
+        android:textColorLink="#6FB0ED"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="75dp"
+        android:layout_height="68dp"
+        app:srcCompat="@mipmap/inicio_foreground"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="633dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="82dp"
+        android:layout_height="66dp"
+        app:srcCompat="@mipmap/pedido_foreground"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="633dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="82dp"
+        android:layout_height="66dp"
+        app:srcCompat="@mipmap/ubicacion_foreground"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="635dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="82dp"
+        android:layout_height="66dp"
+        app:srcCompat="@mipmap/cuenta_foreground"
+        tools:layout_editor_absoluteX="313dp"
+        tools:layout_editor_absoluteY="635dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d1f2eb"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="244dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/juguetepito_foreground" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toEndOf="@+id/imageButton16"
+        app:srcCompat="@mipmap/cana" />
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categories_title"
+        app:srcCompat="@mipmap/canadelgada_foreground" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/pulpo_foreground" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="132dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/raton_foreground" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="82dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:srcCompat="@mipmap/cuenta_foreground" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="82dp"
+        android:layout_height="66dp"
+        app:srcCompat="@mipmap/ubicacion_foreground"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="635dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/search_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:contentDescription="Carrito"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/cart_icon"
+        android:layout_width="82dp"
+        android:layout_height="75dp"
+        android:background="@drawable/border"
+
+        android:src="@mipmap/carrito_foreground"
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="-3dp" />
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="442dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="168dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@mipmap/portada2_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_layout" />
+
+    <TextView
+        android:id="@+id/categories_title"
+        android:layout_width="145dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:text="  Productos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/banner"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/search_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buscar productos"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="127dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="454dp">
+
+    </com.google.android.material.chip.ChipGroup><![CDATA[
+
+    +
+
+
+    android:background="@drawable/border"
+    android:contentDescription="Higiene"
+    tools:layout_editor_absoluteX="144dp"
+    tools:layout_editor_absoluteY="402dp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="421dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/border"
+        app:srcCompat="@mipmap/cascabel_foreground"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="75dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/inicio_foreground"
+        tools:layout_editor_absoluteY="632dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="82dp"
+        android:layout_height="66dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+        app:srcCompat="@mipmap/pedido_foreground"
+        tools:layout_editor_absoluteY="633dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:contentDescription="Higiene"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cuenta"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="402dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
